@@ -29,7 +29,6 @@
           <%= sort_link @search,:description, t(:description), {}, {:title => 'zones_order_by_description_title'} %>
         </th>
         <th><%= t(:default_tax) %></th>
-        <th class="actions"></th>
       </tr>
     </thead>
     <tbody>
@@ -38,10 +37,6 @@
           <td><%=zone.name %></td>
           <td><%=zone.description %></td>
           <td class="align-center"><%=zone.default_tax %></td>
-          <td class="actions">
-            <%=link_to_edit zone, :no_text => true %>
-            <%=link_to_delete zone, :no_text => true %>
-          </td>
         </tr>
       <% end %>
     </tbody>
